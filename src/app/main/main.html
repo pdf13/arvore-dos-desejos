@@ -1,33 +1,60 @@
 <div class="container">
+  <div class="row" ng-switch on="screen">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-8 shaddow box">
+      <div ng-switch-when="inicial" class="inicial">
+        <div class="cabecalho text-center">
+          <img src="assets/images/logo-projeto.png" class="logo-projeto" alt="">
+          <h1>Não é preciso um trenó para poder ajudar</h1>
+        </div>
+        <div class="bs-wizard clearfix">
+            <div class="col-xs-4 bs-wizard-step complete">
+              <div class="text-center bs-wizard-stepnum">Passo 1</div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <span class="bs-wizard-dot"></span>
+              <div class="bs-wizard-info text-center">Lorem ipsum dolor sit amet.</div>
+            </div>
 
-  <div ng-include="'components/navbar/navbar.html'"></div>
+            <div class="col-xs-4 bs-wizard-step complete">
+              <div class="text-center bs-wizard-stepnum">Passo 2</div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <span class="bs-wizard-dot"></span>
+              <div class="bs-wizard-info text-center">Integer semper dolor ac auctor rutrum. Duis porta ipsum vitae mi bibendum bibendum</div>
+            </div>
 
-  <div class="jumbotron text-center">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      Always a pleasure scaffolding your apps.
-    </p>
-    <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
-      <div class="thumbnail">
-        <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
-        <div class="caption">
-          <h3>{{awesomeThing.title}}</h3>
-          <p>{{awesomeThing.description}}</p>
-          <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
+            <div class="col-xs-4 bs-wizard-step complete">
+              <div class="text-center bs-wizard-stepnum">Passo 3</div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <span class="bs-wizard-dot"></span>
+              <div class="bs-wizard-info text-center"> Curabitur mollis magna at blandit vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</div>
+            </div>
+        </div>
+        <div class="doacoes text-center">
+          <button type="button" class="btn btn-fresh btn-lg" ng-click="goTo('boleto')">
+            <i class="fa fa-barcode"></i> Boleto
+          </button>
+          ou
+          <button type="button" class="btn btn-fresh btn-lg" ng-click="goTo('cartao')">
+            <i class="fa fa-credit-card"></i> Cartão de crédito
+          </button>
+        </div>
+      </div>
+      <div ng-switch-when="boleto" class="boleto">
+        <div class="cabecalho text-center">
+          <img src="assets/images/logo-projeto.png" class="logo-projeto" alt="">
+        </div>
+      </div>
+      <div ng-switch-when="cartao" class="cartao">
+        <div class="cabecalho text-center">
+          <img src="assets/images/logo-projeto.png" class="logo-projeto" alt="">
         </div>
       </div>
     </div>
   </div>
-
-  <hr>
-
-  <div class="footer">
-    <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
-  </div>
-
 </div>
