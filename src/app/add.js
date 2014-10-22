@@ -1,14 +1,26 @@
 'use strict';
 
-angular.module('add', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.router'])
+angular.module('add',
+  [
+    'ngAnimate',
+    'ngTouch',
+    'ngSanitize',
+    'ui.router',
+    'add.conteudo'
+  ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('home', {
+      .state('inicial', {
         url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        views: {
+          '' : {
+            templateUrl: 'app/conteudo/estrutura.html'
+          },
+          'conteudo@inicial' : {
+            templateUrl: 'app/conteudo/pagina-inicial.html'
+          }
+        }
       });
 
     $urlRouterProvider.otherwise('/');
-  })
-;
+  });
