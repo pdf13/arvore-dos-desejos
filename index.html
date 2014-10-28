@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" ng-app="add">
+  <head>
+    <meta charset="utf-8">
+    <title>Projeto Árvore dos Desejos</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/maximage/lib/css/jquery.maximage.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="assets/styles/overrides.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div id="maximage">
+      <div>
+        <img src="assets/images/001.jpg" />
+        <img src="assets/images/gradient.png">
+      </div>
+      <div>
+        <img src="assets/images/002.jpg" />
+        <img src="assets/images/gradient.png">
+      </div>
+      <div>
+        <img src="assets/images/003.jpg" />
+        <img src="assets/images/gradient.png">
+      </div>
+      <div>
+        <img src="assets/images/004.jpg" />
+        <img src="assets/images/gradient.png">
+      </div>
+      <div>
+        <img src="assets/images/005.jpg" />
+        <img src="assets/images/gradient.png">
+      </div>
+      <div>
+        <img src="assets/images/006.jpg" />
+        <img src="assets/images/gradient.png">
+      </div>
+      <div>
+        <img src="assets/images/007.jpg" />
+        <img src="assets/images/gradient.png">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-8 shaddow box">
+          <div class="cabecalho text-center">
+            <img src="assets/images/logo-projeto.png" class="logo-projeto" alt="">
+            <h1>Não é preciso um trenó para poder ajudar</h1>
+          </div>
+          <div class="bs-wizard clearfix">
+              <div class="col-xs-4 bs-wizard-step complete">
+                <div class="text-center bs-wizard-stepnum">&nbsp;</div>
+                <div class="progress">
+                  <div class="progress-bar"></div>
+                </div>
+                <span class="bs-wizard-dot"></span>
+                <div class="bs-wizard-info text-center">Identificar instituições de apoio a crianças carentes em situação de privação</div>
+              </div>
+
+              <div class="col-xs-4 bs-wizard-step complete">
+                <div class="text-center bs-wizard-stepnum">&nbsp;</div>
+                <div class="progress">
+                  <div class="progress-bar"></div>
+                </div>
+                <span class="bs-wizard-dot"></span>
+                <div class="bs-wizard-info text-center">Proporcionar às crianças momentos de lazer com atividades educacionais</div>
+              </div>
+
+              <div class="col-xs-4 bs-wizard-step complete">
+                <div class="text-center bs-wizard-stepnum">&nbsp;</div>
+                <div class="progress">
+                  <div class="progress-bar"></div>
+                </div>
+                <span class="bs-wizard-dot"></span>
+                <div class="bs-wizard-info text-center">Realizar a entrega de presentes e kits escolares durante a realização dessas atividades</div>
+              </div>
+          </div>
+          <div class="doacoes text-center">
+            <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post" class="form-doacao">
+              <input type="hidden" name="currency" value="BRL" />
+              <input type="hidden" name="receiverEmail" value="pedrodiasfonseca@gmail.com" />
+              <button name="submit" class="btn btn-fresh btn-lg">
+                <i class="fa fa-child"></i>
+                Fazer o natal de uma criança mais feliz!
+              </button>
+            </form>
+          </div>
+          <div class="text-center pagseguro">
+            <img src="assets/images/pagseguro.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/maximage/lib/js/jquery.cycle.all.js"></script>
+    <script src="bower_components/maximage/lib/js/jquery.maximage.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+    $(function(){
+      $('#maximage').maximage();
+    });
+    </script>
+
+  </body>
+</html>

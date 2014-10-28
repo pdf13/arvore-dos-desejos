@@ -27,16 +27,38 @@ body{
 .bs-wizard{
   margin: 20px;
   border-bottom: 0;
+
+  .bs-wizard-info{
+    color: #595959 !important;
+    padding: 0 12px;
+  }
 }
 
-form{
-  padding: 0;
+.form-doacao{
+  width: auto;
+  display: inline-block;
 
-  & > div:nth-child(odd){
-    padding-left: 0;
+  input[type='submit']{
+    &:before{
+      content: "\f1ae";
+    }
+  }
+}
+
+.papai-noel{
+  max-height: 180px;
+}
+
+.pagseguro{
+  margin: 10px auto 0;
+
+  img{
+    max-height: 60px;
   }
 
-  & > div:nth-child(even){
-    padding-right: 0;
+  &:after{
+    content: 'Doação feita através do PagSeguro';
+    display: block;
+    font-size: 0.7em;
   }
 }

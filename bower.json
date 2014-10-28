@@ -1,24 +1,35 @@
 {
-  "name": "add",
+  "name": "Projeto Árvore dos Desejos",
   "version": "0.0.0",
+  "homepage": "https://github.com/pdf13/arvore-dos-desejos",
+  "authors": [
+    "Pedro Dias <pedrodiasfonseca@gmail.com>"
+  ],
+  "description": "Página de doações para o Projeto Árvore dos Desejos 2014",
+  "main": "index.html",
+  "keywords": [
+    "doação",
+    "natal",
+    "presentes",
+    "árvore",
+    "dos",
+    "desejos",
+    "papai",
+    "noel"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "modernizr": "2.8.x",
-    "angular": "1.2.x",
-    "jquery": "2.x.x",
-    "angular-animate": "1.2.x",
-    "angular-touch": "1.2.x",
-    "angular-sanitize": "1.2.x",
-    "angular-ui-router": "0.2.x",
-    "bootstrap-sass-official": "3.2.x",
+    "font-awesome": "~4.2.0",
     "maximage": "*",
-    "font-awesome": "~4.2.0"
-  },
-  "devDependencies": {
-    "angular-mocks": "1.2.x"
-  },
-  "resolutions": {
-    "angular": "1.2.x",
-    "modernizr": "2.8.x",
-    "jquery": "2.x.x"
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0"
   }
 }
