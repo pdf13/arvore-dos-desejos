@@ -1,4 +1,7 @@
 $vermelho: #F05757;
+$verde: #00A859;
+$amarelo: #F0DF2E;
+$sombra-amarela: #A69C2C;
 
 body{
   color: #525252;
@@ -20,12 +23,18 @@ body{
 }
 
 .cabecalho{
-  font-family: 'Yesteryear', cursive;
-  color: $vermelho;
+  font-family: 'Arizonia', cursive;
+  color: $amarelo;
+
+  h1{
+    font-size: 42px;
+    text-shadow: 2px 1px 0px $sombra-amarela;
+    margin-bottom: 0;
+  }
 }
 
 .bs-wizard{
-  margin: 20px;
+  margin: 0 20px 10px;
   border-bottom: 0;
 
   .bs-wizard-info{
